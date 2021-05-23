@@ -35,7 +35,7 @@ class SharesController extends Controller
         $item->share = $request->share;
         $item->save();
         return response()->json([
-            'message' => "Share created successfully",
+            'message' => 'Share created successfully',
             'data' => $item
         ], 200);
     }
